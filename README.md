@@ -1,7 +1,11 @@
 # EASUN iSolar SMX-II → Home Assistant
 
-A Python/AppDaemon collector for retrieving data from an
-EASUN iSolar SMX-II inverter through the original EASUN WiFi logger.
+*A Python/AppDaemon collector for retrieving data from an
+EASUN iSolar SMX-II inverter through the original EASUN WiFi logger.*
+
+
+![EASUN iSolar SMX-II to Home Assistant](images/header_new.png)
+
 
 ## Features
 
