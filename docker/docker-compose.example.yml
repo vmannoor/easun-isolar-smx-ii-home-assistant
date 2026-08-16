@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  appdaemon:
+    container_name: appdaemon
+    restart: unless-stopped
+    image: acockburn/appdaemon:latest
+
+    environment:
+      HA_URL: ${PORT8123}
+      TOKEN: ${ADTOKEN}
+      DASH_URL: ${PORT5050}
+
+    ports:
+      - "5050:5050"
+      - "8899:8899"
+
+    volumes:
+      - /docker/appdaemon/conf:/conf
+      - /var/run/dbus:/var/run/dbus
+      - /docker/haos/config:/homeassistant:rw
