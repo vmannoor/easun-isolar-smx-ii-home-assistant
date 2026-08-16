@@ -39,3 +39,14 @@ EASUN iSolar SMX-II inverter through the original EASUN WiFi logger.*
 
 See the complete installation instructions in the Medium article:
 [[Integrating an EASUN iSolar SMX-II with Home Assistant and AppDaemon]](https://medium.com/@vmannoor/integrating-easun-isolar-smx-ii-inverter-with-home-assistant-and-appdaemon-using-the-existing-wifi-8ebdbc2484aa?postPublishedType=initial)
+
+## Credits
+
+This project is based on the excellent reverse-engineering work by
+[suletom](https://github.com/suletom/EASUN-ISOLAR-SMX-II-CONTROL).
+
+The original project provided the information needed to understand the
+communication protocol used by the EASUN WiFi logger and the inverter.
+
+A big thank you to [suletom](https://github.com/suletom) for making this
+work publicly available.
