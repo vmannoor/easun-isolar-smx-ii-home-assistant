@@ -30,3 +30,8 @@ EASUN iSolar SMX-II inverter through the original EASUN WiFi logger.
 - Home Assistant
 - AppDaemon
 - Docker, if using a Docker-based installation
+
+## Installation
+
+See the complete installation instructions in the Medium article:
+[[Integrating an EASUN iSolar SMX-II with Home Assistant and AppDaemon]](https://medium.com/@vmannoor/integrating-easun-isolar-smx-ii-inverter-with-home-assistant-and-appdaemon-using-the-existing-wifi-8ebdbc2484aa?postPublishedType=initial)
