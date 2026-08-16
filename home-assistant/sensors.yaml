@@ -1,0 +1,61 @@
+  command_line:
+    - sensor: 
+          name: EASUN-isolar Machine State
+          unique_id: easun-isolar-smx-ii.MachineState
+          command: "cat /config/datalogger_output.json"
+          json_attributes:
+            - "MachineState"
+            - "updated_at"
+          value_template: "{{ value_json['MachineState_text'] }}"
+          scan_interval: 10
+    - sensor:         
+          name: EASUN-isolar Line Voltage
+          unique_id: easun-isolar-smx-ii.LineVoltage
+          command: "cat /config/datalogger_output.json"
+          json_attributes:
+            - "LineVoltage"
+          value_template: "{{ value_json['LineVoltage'] | float(0) }}"
+          unit_of_measurement: "V"
+          state_class: measurement
+          scan_interval: 10
+    - sensor: 
+          name: EASUN-isolar Battery Voltage
+          unique_id: easun-isolar-smx-ii.BatteryVoltage
+          command: "cat /config/datalogger_output.json"
+          json_attributes:
+            - "BatteryVoltage"
+          value_template: "{{ value_json['BatteryVoltage'] | float(1) }}"
+          unit_of_measurement: "V"
+          state_class: measurement
+          scan_interval: 10
+    - sensor:         
+          name: EASUN-isolar Battery Soc
+          unique_id: easun-isolar-smx-ii.BatterySoc
+          command: "cat /config/datalogger_output.json"
+          json_attributes:
+            - "BatterySoc"
+            - "updated_at"
+          value_template: "{{ value_json['BatterySoc'] | float(0) }}"
+          unit_of_measurement: "%"
+          device_class: battery
+          state_class: measurement
+    - sensor:
+        name: EASUN-isolar Load ActivePower
+        unique_id: easun-isolar-smx-ii.LoadActivePower
+        command: "cat /config/datalogger_output.json"
+        json_attributes:
+          - "LoadActivePower"
+        value_template: "{{ value_json['LoadActivePower'] | float(0) }}"
+        unit_of_measurement: "W"
+        state_class: measurement
+        scan_interval: 10
+    - sensor:
+        name: EASUN-isolar Load Ratio
+        unique_id: easun-isolar-smx-ii.LoadRatio
+        command: "cat /config/datalogger_output.json"
+        json_attributes:
+          - "LoadRatio"
+        value_template: "{{ value_json['LoadRatio'] | float(0) }}"
+        unit_of_measurement: "%"
+        state_class: measurement
+        scan_interval: 10
