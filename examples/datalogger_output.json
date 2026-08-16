@@ -1,0 +1,10 @@
+{
+  "MachineState": 4,
+  "MachineState_text": "Running in line",
+  "LineVoltage": 218.6,
+  "BatteryVoltage": 27.6,
+  "BatterySoc": 100,
+  "LoadActivePower": 0,
+  "LoadRatio": 0,
+  "updated_at": "2026-08-16T11:01:49.032211+03:00"
+}
