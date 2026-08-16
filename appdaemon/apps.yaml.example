@@ -1,0 +1,10 @@
+easun_collector:
+  module: easun_collector
+  class: EASUNCollector
+  logger_ip: XXX:XXX:XXX:XXX    # EASUN WiFi logger
+  local_ip: XXX:XXX:XXX:XXX     # IP address of the Docker host exposed to the logger
+  tcp_port: 8899                # EASUN communication ports
+  udp_port: 58899               # EASUN communication ports
+  poll_interval: 10             # Polling
+  timeout: 5
+  output_file: /homeassistant/datalogger_output.json      # HA output. the folder /homeassistant should be mapped in appdaemon container  
